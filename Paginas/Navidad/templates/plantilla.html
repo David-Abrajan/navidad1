@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SUPERMAXI - Descubra el lado super en cada beneficio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChCGLk5YJPVNia2eCBcmG3iPc0TSv_eA8&libraries=places&callback=initMap"></script>
+    <style>
+    .navbar {
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .navbar-nav .nav-link {
+        margin-right: 15px;
+      }
+      .custom-container {
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .submenu {
+        display: none;
+        list-style-type: none;
+        padding-left: 0;
+        position: absolute;
+        background-color: #000;
+        border: 1px solid #ccc;
+        margin-top: 1px;
+        min-width: 150px;
+        text-align: left;
+      }
+      .submenu li {
+        padding: 8px;
+         border-bottom: 1px solid #fff;
+      }
+      .submenu a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .submenu a:hover {
+        background-color: #e60000;
+        color: #fff;
+      }
+      .nav-item:hover .submenu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-12">
+        <h6 style="text-align: center; background-color: black; color: white">OBTEN EL <strong>10% DE DTO.</strong>  EN CARNES Y PROTEINAS, TODOS LOS VIERNES</h6>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-3">
+        <a href="/"><img src="https://www.supermaxi.com/wp-content/uploads/2019/05/supermaxi-logo@2x.png" height="50px"></a>
+      </div>
+      <div class="col-md-4">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Busca productos, locales, recetas y más" aria-label="Search">
+          <button class="btn btn-dark" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+      </div>
+      <div class="col-md-3">
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-center">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="/afiliacion/"><strong>AFILIACIÓN</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="/superOfertas/"><strong>SÚPER OFERTAS</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="/planEmpresarial/"><strong>PLAN EMPRESARIAL</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="/canastosyDespensas/"><strong>CANASTOS Y DESPENSAS</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="/beneficios/"><strong>BENEFICIOS</strong></a>
+              <ul class="submenu">
+                <li><a class="nav-link fw-bold" href="#" style="color:white">CADENA DE BENEFICIOS</a></li>
+                <li><a class="nav-link fw-bold" href="#" style="color:white">MAXICOMBOS</a></li>
+                <li><a class="nav-link fw-bold" href="#" style="color:white">CRÉDITOS FAVORITO</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="/catalogos/"><strong>CATALOGOS</strong></a>
+              <ul class="submenu">
+                <li><a class="nav-link fw-bold" href="/productosSupermaxi/" style="color:white">PRODUCTOS SUPERMAXI</a></li>
+                <li><a class="nav-link fw-bold" href="#" style="color:white">PRODUCTOS MEGAMAXI</a></li>
+                <li><a class="nav-link fw-bold" href="/vinos/" style="color:white">VINOS</a></li>
+                <li><a class="nav-link fw-bold" href="/maxiplus/" style="color:white">MAXIPLUS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#"><strong>EMPRESA</strong></a>
+              <ul class="submenu">
+                <li><a class="nav-link fw-bold" href="/trabajeconNosotros/" style="color:white">TRABAJO CON NOSOTROS</a></li>
+                <li><a class="nav-link fw-bold" href="/responsabilidadSocial/" style="color:white">RESPONSABILIDAD SOCIAL</a></li>
+                <li><a class="nav-link fw-bold" href="#" style="color:white">ACERCA DE SUPERMAXI</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link fw-bold" href="/locales/"><strong>LOCALES</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#"><strong>MÁS</strong></a>
+              <ul class="submenu">
+                <li><a class="nav-link fw-bold" href="#" style="color:white">MEGAMAXI</a></li>
+                <li><a class="nav-link fw-bold" href="/recetas/" style="color:white">RECETAS</a></li>
+                <li><a class="nav-link fw-bold" href="#" style="color:white">RECICLA CON GIRA</a></li>
+                <li><a class="nav-link fw-bold" href="/maxiplus/" style="color:white">MAXIPLUS</a></li>
+                <li><a class="nav-link fw-bold" href="#" style="color:white">MAXIONLINE</a></li>
+                <li><a class="nav-link fw-bold" href="#" style="color:white">PREGUNTAS FRECUENTES</a></li>
+                <li><a class="nav-link fw-bold" href="#" style="color:white">OFERTAS FALSAS</a></li>
+                <li><a class="nav-link fw-bold" href="#" style="color:white">RETORNABLES</a></li>
+                <li><a class="nav-link fw-bold" href="#" style="color:white">SUPER GANADORES</a></li>
+                <li><a class="nav-link fw-bold" href="/maxinoticias/" style="color:white">MAXINOTICIAS</a></li>
+                <li><a class="nav-link fw-bold" href="#" style="color:white">MAXI AL DÍA</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    {% block contenido %}
+    {% endblock %}
+  </body>
+  <br>
+  <br>
+  <footer>
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-3">
+        <a href="/"><img src="https://www.supermaxi.com/wp-content/uploads/2019/05/supermaxi-logo@2x.png" height="50px"></a>
+        <h5 style="text-align: center;">Siguenos en:</h5>
+        <a href="https://twitter.com/supermaxiecu"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        <a href="https://www.facebook.com/SupermaxiEcuador"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/supermaxiecuador/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="https://www.youtube.com/c/SupermaxiEc"><i class="fa-brands fa-youtube fa-2x"></i></a>
+      </div>
+      <div class="col-md-2">
+        <p style="color: red"><strong>LA EMPRESA</strong></p>
+        <p><strong>Trabaje con Nosotros <br> Acerca de Supermaxi <br> Responsabilidad Social <br> Preguntas Frecuentes</strong> </p>
+      </div>
+      <div class="col-md-2">
+        <p style="color: red"><strong>PROVEEDORES Y CONSUMIDORES</strong></p>
+        <p><strong>Quieres ser proveedor de Corporación Favorita <br> Facturación Electrónica <br> Proveedores</strong></p>
+      </div>
+      <div class="col-md-2">
+        <p style="color: red"><strong>INFORMACIÓN DE INTERÉS</strong></p>
+        <p><strong>Términos y Condiciones <br> Políticas de privacidad <br> Convenio de afiliación <br> Términos y Condiciones Renueve su Afiliación <br> Derechos sobre datos personales</strong></p>
+      </div>
+    </div>
+    <br>
+    <h5 style="text-align: center; background-color: red; color: white;">Todos los derechos reservados® Corporación Favorita. 2023</h5>
+  </footer>
+</html>
